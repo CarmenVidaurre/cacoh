@@ -64,7 +64,7 @@ f_high = FrBase + 1;
 % Normalize to Nyquist frequency
 Wn = [f_low  f_high] / (fs/2);
 
-% 2nd-order Butterworth BPF
+% 4th-order Butterworth BPF
 [b, a] = butter(2, Wn);
 
 
