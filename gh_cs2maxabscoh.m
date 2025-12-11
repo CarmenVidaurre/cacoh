@@ -34,6 +34,10 @@ function [res, wa, wb, ta, tb] = gh_cs2maxabscoh(csa, csb, csab)
 %       - Computes spatial filters and patterns, then maps back to original space.
 %
 %   -------------------------------------------------------------------------
+% Please cite: Vidaurre C, Nolte G, de Vries IEJ, Gómez M, Boonstra TW, Müller KR, 
+% Villringer A, Nikulin VV. Canonical maximization of coherence: A novel tool for 
+% investigation of neuronal interactions between two datasets. Neuroimage. 2019 Nov 1;201:116009. 
+% doi: 10.1016/j.neuroimage.2019.116009. Epub 2019 Jul 11. PMID: 31302256.
 
 
 %% --- Dimensionality reduction for both spaces ---
