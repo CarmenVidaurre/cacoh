@@ -1,4 +1,16 @@
 function x_warped = gh_warpfrequency(x, FrBase, factor, fs)
+% Copyright (C) 2026 Carmen Vidaurre
+
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+% GNU General Public License for more details
+
 %WARP_FREQUENCY  Frequency-warp a narrow-band component of a multichannel signal.
 %
 %   x_warped = gh_WARPFREQUENCY(x, FrBase, factor, fs)
@@ -28,8 +40,11 @@ function x_warped = gh_warpfrequency(x, FrBase, factor, fs)
 %         - analytic signal via Hilbert transform
 %         - instantaneous phase multiplication
 %
-%   Author: (your name)
-%   Date:   (today)
+%   Author: Carmen Vidaurre
+% Please cite: Vidaurre, C., Eguinoa, R., Maudrich, T. et al. Canonical coherence 
+% for the estimation of within- and cross-frequency cortico-kinematic interactions. 
+% Sci Rep 16, 15182 (2026). 
+% https://doi.org/10.1038/s41598-026-49471-6
 % -------------------------------------------------------------------------
 
 %% -----------------------
