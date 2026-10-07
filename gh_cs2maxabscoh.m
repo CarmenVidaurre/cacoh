@@ -11,7 +11,7 @@ function [res, wa, wb, ta, tb] = gh_cs2maxabscoh(csa, csb, csab)
 % MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 % GNU General Public License for more details
 
-%CS2MAXABSCOH_REGD  Maximize absolute coherence between two sensor spaces.
+%gh_CS2MAXABSCOH_REGD  Maximize absolute coherence between two sensor spaces.
 %
 %   [res, wa, wb, ta, tb] = gh_cs2maxabscoh(csa, csb, csab)
 %
@@ -31,7 +31,7 @@ function [res, wa, wb, ta, tb] = gh_cs2maxabscoh(csa, csb, csab)
 %
 %   OUTPUTS
 %   --------
-%   res : complex coherence (maximum absolute coherence value).
+%   res : maximum absolute coherence value (real between 0 and 1).
 %   wa  : weights (filter) for space A (in sensor space).
 %   wb  : weights (filter) for space B (in sensor space).
 %   ta  : topography (pattern) for space A   = csa * wa, normalized.
