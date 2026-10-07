@@ -202,7 +202,7 @@ function [Ured, Cred, keepIdx] = reduce_dim(C)
 
     % keep ≥ 99% variance
     [~, idx] = sort(s_norm, 'descend');
-    keepIdx = idx(cumsum(s_norm(idx)) <= 0.99);
+    keepIdx = idx(1:find(cumsum(s_norm(idx)) >= 0.99 - 1e-12, 1));
     if isempty(keepIdx)
         keepIdx = idx(1);
     end
